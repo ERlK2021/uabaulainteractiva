@@ -1,35 +1,26 @@
 # UAB Aula Interactiva #
 
-TODO Describe the plugin shortly here.
+This Final Degree Project is focused on the integration of the tool  ̈Interactive Classroom
+(developed by Youssef Assbaghi, Arman Pipoyan and Lluis Galante) with Caronte, which is the 
+platform used on courses like Programming Methodology. The idea is to achieve a better 
+interaction bewteen the teacher and student without the need of third party apps.
+Also, a qualification system is needed to be linked with the integration.
 
-TODO Provide more detailed description here.
 
-## Installing via uploaded ZIP file ##
+##Installation guide:##
 
-1. Log in to your Moodle site as an admin and go to _Site administration >
-   Plugins > Install plugins_.
-2. Upload the ZIP file with the plugin code. You should only be prompted to add
-   extra details if your plugin type is not automatically detected.
-3. Check the plugin validation report and finish the installation.
-
-## Installing manually ##
-
-The plugin can be also installed by putting the contents of this directory to
-
-    {your/moodle/dirroot}/mod/uabaulainteractiva
-
-Afterwards, log in to your Moodle site as an admin and go to _Site administration >
-Notifications_ to complete the installation.
-
-Alternatively, you can run
-
-    $ php admin/cli/upgrade.php
-
-to complete the installation from the command line.
-
+    1.Download the plugin branch zip from this repository and also the backend branch zip.
+    2.Meet the requirements of the repository on which the backend is based: https://github.com/lluisgalante/Web_TFG (skip the installation guide from their repository).
+    3.In your Moodle, open Site Administration > Plugins > Install Plugins, and upload the plugin zip.
+    4.Once you have installed the plugin, decompress the backend zip in /var/www/html/ (it has to be in this path; otherwise, it won't work).
+    5.Go to /var/www/html/html/Model/connection.php and set the name and password for your Moodle database.
+    6.Inside the app folder (the same directory as Model), create a folder called "problemes" which will contain problems.
+    7.Repeat the last step but with a folder called "solucions" which will contain all the students' codes.
+    
 ## License ##
 
-2023 Erik Becerra <1529079@uab.cat>
+2023 Erik Becerra
+2023 Ruben Simo
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
