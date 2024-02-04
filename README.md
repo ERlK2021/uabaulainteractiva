@@ -17,7 +17,7 @@ Also, a qualification system is needed to be linked with the integration.
 6.Inside the app folder (the same directory as Model), create a folder called "problemes" which will contain problems.
 7.Repeat the last step but with a folder called "solucions" which will contain all the students' codes.
 
-## Code for create a view with the grades ##
+## Code to create a view with the grades ##
     -- Parametres de la sessió
     SET SESSION group_concat_max_len = 1000000;
     
