@@ -1,0 +1,119 @@
+.form-container{
+    margin-bottom:20px;
+}
+.messages{
+    margin-left:40%;
+    margin-right:40%;
+}
+.other-t {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(67, 123, 209);
+    text-align: left;
+    border: 1px solid rgb(67, 123, 209);
+    border-radius: 15px;
+}
+
+.self-t {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    padding: 10px;
+    background-color: rgb(60, 179, 113);
+    text-align: left;
+    border: 1px solid rgb(60, 179, 113);
+    border-radius: 15px;
+    word-wrap: break-word
+}
+
+.message-content {
+    padding: 0;
+    margin: 0;
+}
+.other-t:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgb(67, 123, 209);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: -15px;
+}
+
+.other-t:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid rgb(67, 123, 209);
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    top: -1px;
+    left: -17px;
+}
+
+.self-t:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid rgb(60, 179, 113);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 0;
+    right: -15px;
+}
+
+.self-t:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid rgb(60, 179, 113);
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    bottom: -1px;
+    right: -17px;
+}
+.form-inline{
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    width: 15%;
+    transition: 200ms all ease-in;
+}
+input[type=text]:hover{
+    width: 25%;
+}
+
+#submit{
+    border:none !important;
+    border-radius:50px !important;
+    background-color: transparent !important;
+}
+
+.message-timestamp-other {
+    position: absolute;
+    font-size: .85em;
+    font-weight: 300;
+    bottom: 5px;
+    right: 5px;
+}
+
+.message-timestamp-self {
+    position: absolute;
+    font-size: .85em;
+    font-weight: 300;
+    bottom: 5px;
+    left: 5px;
+}

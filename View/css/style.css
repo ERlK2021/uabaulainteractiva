@@ -1,0 +1,323 @@
+:root {
+    --iconSize: 36px;
+
+    /* Colors used in the dark theme */
+    --themeDarkCollapseIcon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --themeDarkScrollbarColor: rgb(170, 170, 170);
+    --themeDarkScrollbarHoverColor: rgb(150, 150, 150);
+    --themeDarkHeaderBGColor: rgb(35, 35, 35);
+    --themeDarkButtonBGColor: rgb(35, 35, 35);
+    --themeDarkButtonBorderColor: rgb(180, 180, 180);
+    --themeDarkButtonHoverColor: rgb(70, 70, 70);
+    --themeDarkFooterBGColor: rgb(35, 35, 35);
+    --themeDarkCollapsibleBGColor: rgb(55, 55, 55);
+    --themeDarkCollapsibleHoverColor: rgb(70, 70, 70);
+    --themeDarkCollapsibleContentColor: rgb(70, 70, 70);
+    --themeDarkCardBGColor: rgb(35, 35, 35);
+    --themeDarkSwitchBallColor: rgb(255, 255, 255);
+    --themeDarkSwitchColor: rgb(0, 0, 0);
+    --themeDarkBGColor: rgb(25, 25, 25);
+    --themeDarkTextColor: rgb(255, 255, 255);
+    --themeDarkBreadcrumbColor:rgb(192,192,192);/*SILVER*/
+    --themeDarkFollow_up_student_info: rgba(130,163,255, 0.6);
+
+    /* Colors used in the light theme */
+    --themeLightCollapseIcon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --themeLightScrollbarColor: rgb(190, 190, 190);
+    --themeLightScrollbarHoverColor: rgb(175, 175, 175);
+    --themeLightHeaderBGColor: rgb(255, 255, 255);
+    --themeLightButtonBGColor: rgb(255, 255, 255);
+    --themeLightButtonBorderColor: rgb(180, 180, 180);
+    --themeLightButtonHoverColor: rgb(230, 230, 230);
+    --themeLightFooterBGColor: rgb(255, 255, 255);
+    --themeLightCollapsibleBGColor: rgb(215, 215, 215);
+    --themeLightCollapsibleHoverColor: rgb(190, 190, 190);
+    --themeLightCollapsibleContentColor: rgb(190, 190, 190);
+    --themeLightCardBGColor: rgb(255, 255, 255);
+    --themeLightSwitchBallColor: rgb(0, 0, 0);
+    --themeLightSwitchColor: rgb(120, 120 ,120);
+    --themeLightBGColor: rgb(245, 245, 245);
+    --themeLightTextColor: rgb(0, 0, 0);
+    --themeLightBreadcrumbColor:rgb(255,255,255);/*WHITE*/
+    --themeLightFollow_up_student_info: rgba(100, 149, 237,0.9);
+
+    /* Colors of the active active theme, initially light */
+    --invertIconColor: 0;
+    --themeActiveScrollbarColor: var(--themeLightScrollbarColor);
+    --themeActiveScrollbarHoverColor: var(--themeLightScrollbarHoverColor);
+    --themeActiveCollapseIcon: var(--themeLightCollapseIcon);
+    --themeActiveButtonBGColor: var(--themeLightButtonBGColor);
+    --themeActiveHeaderBGColor: var(--themeLightHeaderBGColor);
+    --themeActiveButtonBorderColor: var(--themeLightButtonBorderColor);
+    --themeActiveButtonHoverColor: var(--themeLightButtonHoverColor);
+    --themeActiveFooterBGColor: var(--themeLightFooterBGColor);
+    --themeActiveCollapsibleBGColor: var(--themeLightCollapsibleBGColor);
+    --themeActiveCollapsibleHoverColor: var(--themeLightCollapsibleHoverColor);
+    --themeActiveCollapsibleContentColor: var(--themeLightCollapsibleContentColor);
+    --themeActiveCardBGColor: var(--themeLightCardBGColor);
+    --themeActiveSwitchBallColor: var(--themeLightSwitchBallColor);
+    --themeActiveSwitchColor: var(--themeLightSwitchColor);
+    --themeActiveBGColor: var(--themeLightBGColor);
+    --themeActiveTextColor: var(--themeLightTextColor);
+    --themeBreadcrumbColor:var(--themeLightBreadcrumbColor);/*Breadcrumb*/
+    --themeFollow_up_student_info: var(--themeLightFollow_up_student_info)
+
+}
+
+.dark-theme {
+    /* Change the theme to black */
+    --invertIconColor: 1;
+    --themeActiveScrollbarColor: var(--themeDarkScrollbarColor);
+    --themeActiveScrollbarHoverColor: var(--themeDarkScrollbarHoverColor);
+    --themeActiveCollapseIcon: var(--themeDarkCollapseIcon);
+    --themeActiveButtonBGColor: var(--themeDarkButtonBGColor);
+    --themeActiveHeaderBGColor: var(--themeDarkHeaderBGColor);
+    --themeActiveButtonBorderColor: var(--themeDarkButtonBorderColor);
+    --themeActiveButtonHoverColor: var(--themeDarkButtonHoverColor);
+    --themeActiveFooterBGColor: var(--themeDarkFooterBGColor);
+    --themeActiveCollapsibleBGColor: var(--themeDarkCollapsibleBGColor);
+    --themeActiveCollapsibleHoverColor: var(--themeDarkCollapsibleHoverColor);
+    --themeActiveCollapsibleContentColor: var(--themeDarkCollapsibleContentColor);
+    --themeActiveCardBGColor: var(--themeDarkCardBGColor);
+    --themeActiveSwitchBallColor: var(--themeDarkSwitchBallColor);
+    --themeActiveSwitchColor: var(--themeDarkSwitchColor);
+    --themeActiveBGColor: var(--themeDarkBGColor);
+    --themeActiveTextColor: var(--themeDarkTextColor);
+    --themeBreadcrumbColor:var(--themeDarkBreadcrumbColor);/*Breadcrumb*/
+    --themeFollow_up_student_info: var(--themeDarkFollow_up_student_info);
+}
+
+/*** Style of generic elements ***/
+/* Body style */
+body {
+    color: var(--themeActiveTextColor);
+    background-color: var(--themeActiveBGColor) !important;
+}
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--themeActiveBGColor);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--themeActiveScrollbarColor);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--themeActiveScrollbarHoverColor);
+    border-radius: 10px;
+}
+
+/* Icons style */
+.icon {
+    -webkit-filter: invert(calc(var(--invertIconColor) * 100%));
+    filter: invert(calc(var(--invertIconColor) * 100%));
+    cursor: pointer;
+    height: var(--iconSize);
+}
+
+/* Footer style */
+footer {
+    color: var(--themeActiveTextColor);
+    background: var(--themeActiveFooterBGColor);
+}
+
+/* Header style */
+header {
+    min-width: 250px;
+    margin-bottom: 30px;
+    background: var(--themeActiveHeaderBGColor);
+}
+
+.nav-item {
+    padding: 2px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.nav-link, .btn {
+    background-color: var(--themeActiveButtonBGColor) !important;
+    color: var(--themeActiveTextColor) !important;
+    border: 1px solid var(--themeActiveButtonBorderColor) !important;
+    text-align: center !important;
+    padding: 8px !important;
+    border-radius: 10px !important;
+}
+
+.nav-link {
+    width: 100%;
+}
+
+.nav-link:hover, .btn:hover {
+    background-color: var(--themeActiveButtonHoverColor) !important;
+    color: var(--themeActiveTextColor) !important;
+    border: 1px solid var(--themeActiveButtonBorderColor) !important;
+}
+
+.navbar-toggler {
+    margin-right: auto;
+}
+
+.navbar-toggler-icon {
+    background-image: var(--themeActiveCollapseIcon);
+}
+
+#logo {
+    height: 48px;
+}
+
+/* Plus sign inserted before the element */
+.add-object::before, .github::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-filter: invert(calc(var(--invertIconColor) * 100%));
+    filter: invert(calc(var(--invertIconColor) * 100%));
+}
+
+.add-object::before {
+    width: calc(var(--iconSize) - 20px);
+    height: calc(var(--iconSize) - 20px);
+    background: url("/View/images/plus.png");
+    background-size: cover;
+}
+
+.github::before {
+    width: calc(var(--iconSize) - 10px);
+    height: calc(var(--iconSize) - 10px);
+    background: url("/View/images/github.png");
+    background-size: cover;
+}
+
+/* Modal style */
+.modal-content {
+    background-color: var(--themeActiveBGColor);
+    color: var(--themeActiveTextColor);
+    border-radius: 13px;
+}
+
+/*** Content style ***/
+/* Content Header Style */
+.content-header {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header-buttons, .modal-buttons {
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+}
+
+/* Collapsible style */
+.collapsible {
+    border-radius: 10px;
+    background-color: var(--themeActiveCollapsibleBGColor);
+    color: var(--themeActiveTextColor);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.active, .collapsible:hover {
+    background-color:  var(--themeActiveCollapsibleHoverColor);
+}
+
+.content {
+    margin-top: -18px;
+    margin-bottom: 10px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color:  var(--themeActiveCollapsibleContentColor);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Dropdown menu style */
+.dropdown-menu {
+    top: 57px;
+    text-align: -webkit-center;
+    padding: 0.5rem;
+    width: 100px;
+    position: absolute !important;
+    color: var(--themeActiveTextColor) !important;
+    background-color: var(--themeActiveHeaderBGColor);
+}
+
+.dropdown-item {
+    margin: 0;
+}
+
+/* Card style */
+.card-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color:  var(--themeActiveCollapsibleContentColor);
+    border-radius: 10px;
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--themeActiveCardBGColor);
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--themeActiveTextColor)
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-footer {
+    display: block;
+}
+
+.ur {
+    border: none;
+    background-color: #e6e2e2;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+}
+
+.cpy {
+    border: none;
+    background-color: #e6e2e2;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer
+}
+
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.ur.focus,
+.ur:focus {
+    outline: 0;
+    box-shadow: none !important
+}

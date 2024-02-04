@@ -1,0 +1,209 @@
+:root {
+    /* Colors used in the dark theme */
+    --themeDarkFormBorderColor: rgb(250, 250, 250);
+    --themeDarkFormFieldBGColor: rgb(80, 80, 80);
+    --themeDarkFormTextColor: rgb(200, 200, 200);
+    --themeDarkBGColor: rgb(25, 25, 25);
+    --themeDarkTextColor: rgb(255, 255, 255);
+
+    /* Colors used in the light theme */
+    --themeLightFormBorderColor: rgb(50, 50, 50);
+    --themeLightFormFieldBGColor: rgb(240, 240, 240);
+    --themeLightFormTextColor: rgb(130, 130, 130);
+    --themeLightBGColor: rgb(245, 245, 245);
+    --themeLightTextColor: rgb(0, 0, 0);
+
+    /* Colors of the active active theme, initially light */
+    --themeActiveFormBorderColor: var(--themeLightFormBorderColor);
+    --themeActiveFormFieldBGColor: var(--themeLightFormFieldBGColor);
+    --themeActiveFormTextColor: var(--themeLightFormTextColor);
+    --themeActiveBGColor: var(--themeLightBGColor);
+    --themeActiveTextColor: var(--themeLightTextColor);
+}
+
+.dark-theme {
+    /* Change the theme to black */
+    --themeActiveFormBorderColor: var(--themeDarkFormBorderColor);
+    --themeActiveFormFieldBGColor: var(--themeDarkFormFieldBGColor);
+    --themeActiveFormTextColor: var(--themeDarkFormTextColor);
+    --themeActiveBGColor: var(--themeDarkBGColor);
+    --themeActiveTextColor: var(--themeDarkTextColor);
+}
+
+.form-container {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+/*** Form styles ***/
+.form {
+    background-color: var(--themeActiveBGColor);
+    color: var(--themeActiveTextColor);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: var(--themeActiveFormTextColor);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.input-container {
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Modifying the bootstrap multiselect library */
+.input-container .btn-group, .multiselect-container {
+    width: 100%;
+}
+.multiselect-container {
+    background-color: var(--themeActiveFormFieldBGColor);
+    border: 1px solid var(--themeActiveTextColor) !important;
+    height: fit-content;
+    overflow: auto;
+    max-height: 175px;
+}
+
+.multiselect-container li {
+    text-align: left;
+    color: var(--themeActiveFormTextColor);
+}
+
+.multiselect-container .checkbox {
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.multiselect-all, .multiselect-all:hover {
+    color: var(--themeActiveFormTextColor);
+}
+
+.input, .multiselect {
+    color: var(--themeActiveFormTextColor) !important;
+    background-color: var(--themeActiveFormFieldBGColor) !important;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 50px;
+    outline: 0;
+    padding: 4px 20px 0 !important;
+    width: 100%;
+}
+
+
+
+.multiselect {
+    text-align-last: left;
+}
+
+.custom-file-label, .custom-file-input {
+    border-radius: 10px;
+    background-color: var(--themeActiveFormFieldBGColor);
+    color: var(--themeActiveFormTextColor);
+    border: 1px solid var(--themeActiveBGColor);
+    height: 50px;
+    text-align: left;
+}
+
+.custom-file-label::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: url("/View/images/folder.png") no-repeat center;
+    background-size: 30px;
+    border-left: 4px solid black;
+    -webkit-filter: invert(calc(var(--invertIconColor) * 100%));
+    filter: invert(calc(var(--invertIconColor) * 100%));
+}
+
+.text-input {
+    min-height: 50px;
+    height: fit-content;
+}
+
+.cut {
+    background-color: var(--themeActiveBGColor);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50px;
+    z-index: 100;
+}
+
+.placeholder {
+    color: var(--themeActiveFormTextColor);
+    text-align: left;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    z-index: 101;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: var(--themeActiveFormTextColor);
+}
+
+.input:focus ~ .placeholder {
+    color: var(--themeActiveFormTextColor);
+}
+
+.input:invalid:required {
+    border: 1px solid red;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#form-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+#error_msg, #info_msg {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-row-item {
+        width: 100%;
+    }
+}
