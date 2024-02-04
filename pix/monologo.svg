@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+	<title>monologo-svg</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 45px;fill: #000000;font-weight: 400;font-family: "DMMono-Regular", "DM Mono" } 
+	</style>
+	<text id="&lt;/&gt;" style="transform: matrix(1,-0.007,.007,1,-3.214,21.967)" >
+		<tspan x="0" y="32.4" class="t0">&lt;</tspan><tspan  y="32.4" class="t0">/</tspan><tspan  y="32.4" class="t0">&gt;
+</tspan>
+	</text>
+</svg>
